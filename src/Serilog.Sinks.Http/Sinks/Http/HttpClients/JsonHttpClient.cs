@@ -57,6 +57,11 @@ public class JsonHttpClient : IHttpClient
     /// <inheritdoc />
     public virtual void Configure(IConfiguration configuration)
     {
+        var timeout = configuration.GetValue<TimeSpan>("HttpClient:Timeout");
+        if (timeout != TimeSpan.Zero)
+        {
+            httpClient.Timeout = timeout;
+        }
     }
 
     /// <inheritdoc />
