@@ -13,13 +13,13 @@
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
     <AssemblyOriginatorKeyFile>../../serilog.snk</AssemblyOriginatorKeyFile>
     <!-- NuGet package -->
-    <PackageId>Serilog.Sinks.Http</PackageId>
+    <PackageId>Serilog.Sinks.Http.Forked</PackageId>
     <PackageTags>serilog;http</PackageTags>
     <PackageIcon>serilog-sink-nuget.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/FantasticFiasco/serilog-sinks-http</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mikko-pulli/serilog-sinks-http</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageReleaseNotes>See https://github.com/FantasticFiasco/serilog-sinks-http/blob/main/CHANGELOG.md for details</PackageReleaseNotes>
+    <PackageReleaseNotes>See https://github.com/mikko-pulli/serilog-sinks-http/blob/main/CHANGELOG.md for details</PackageReleaseNotes>
     <!-- Embed symbols in NuGet package -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -37,7 +37,7 @@
 
   <PropertyGroup>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <RepositoryUrl>https://github.com/FantasticFiasco/serilog-sinks-http.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/mikko-pulli/serilog-sinks-http.git</RepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 

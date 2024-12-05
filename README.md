@@ -1,15 +1,14 @@
-# Serilog.Sinks.Http - A Serilog sink sending log events over HTTP <!-- omit in toc -->
+# Serilog.Sinks.Http.Forked - A Serilog sink sending log events over HTTP <!-- omit in toc -->
 
-[![CI/CD](https://github.com/FantasticFiasco/serilog-sinks-http/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/FantasticFiasco/serilog-sinks-http/actions/workflows/ci-cd.yml)
-[![codecov](https://codecov.io/gh/FantasticFiasco/serilog-sinks-http/branch/main/graph/badge.svg?token=cw6OYeQmdH)](https://codecov.io/gh/FantasticFiasco/serilog-sinks-http)
-[![NuGet Version](http://img.shields.io/nuget/v/Serilog.Sinks.Http.svg?style=flat)](https://www.nuget.org/packages/Serilog.Sinks.Http/)
+[![CI/CD](https://github.com/mikko-pulli/serilog-sinks-http/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/mikko-pulli/serilog-sinks-http/actions/workflows/ci-cd.yml)
+[![NuGet Version](http://img.shields.io/nuget/v/Serilog.Sinks.Http.svg?style=flat)](https://www.nuget.org/packages/Serilog.Sinks.Http.Forked/)
 [![SemVer compatible](https://img.shields.io/badge/%E2%9C%85-SemVer%20compatible-blue)](https://semver.org/)
-[![NuGet](https://img.shields.io/nuget/dt/Serilog.Sinks.Http.svg)](https://www.nuget.org/packages/Serilog.Sinks.Http/)
+[![NuGet](https://img.shields.io/nuget/dt/Serilog.Sinks.Http.svg)](https://www.nuget.org/packages/Serilog.Sinks.Http.Forked/)
 [![Documentation](https://img.shields.io/badge/docs-wiki-yellow.svg)](https://github.com/serilog/serilog/wiki)
 [![Join the chat at https://gitter.im/serilog/serilog](https://img.shields.io/gitter/room/serilog/serilog.svg)](https://gitter.im/serilog/serilog)
 [![Help](https://img.shields.io/badge/stackoverflow-serilog-orange.svg)](http://stackoverflow.com/questions/tagged/serilog)
 
-**Package** - [Serilog.Sinks.Http](https://www.nuget.org/packages/serilog.sinks.http) | **Platforms** - .NET 4.5/4.6.1, .NET Standard 2.0/2.1
+**Package** - [Serilog.Sinks.Http.Forked](https://www.nuget.org/packages/serilog.sinks.http.forked) | **Platforms** - .NET 4.5/4.6.1, .NET Standard 2.0/2.1
 
 ## Table of contents <!-- omit in toc -->
 
@@ -133,12 +132,12 @@ The following sample application demonstrate how Serilog events from a Docker co
 
 ## Install via NuGet
 
-If you want to include the HTTP sink in your project, you can [install it directly from NuGet](https://www.nuget.org/packages/Serilog.Sinks.Http/).
+If you want to include the HTTP sink in your project, you can [install it directly from NuGet](https://www.nuget.org/packages/Serilog.Sinks.Http.Forked/).
 
 To install the sink, run the following command in the Package Manager Console:
 
 ```
-PM> Install-Package Serilog.Sinks.Http
+PM> Install-Package Serilog.Sinks.Http.Forked
 ```
 
 ## Contributors
