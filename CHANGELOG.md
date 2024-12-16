@@ -6,6 +6,15 @@ This project adheres to [Semantic Versioning](http://semver.org/) and is followi
 
 ## Unreleased
 
+## [9.0.1] - 2024-12-05
+
+### :zap: Added
+
+- Added new sink type to write to file if http connection is not active
+
+
+## Unreleased
+
 ## [9.0.0] - 2024-04-14
 
 ### :zap: Added

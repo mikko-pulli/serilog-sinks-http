@@ -41,7 +41,8 @@ namespace Serilog.Sinks.Http.Private.Durable
         private readonly PortableTimer timer;
         private readonly CancellationTokenSource cts = new();
         private readonly object syncRoot = new();
-
+        private bool isAllLogFilesSent;
+        public bool IsAllLogFilesSent => isAllLogFilesSent;
         private bool disposed;
 
         public HttpLogShipper(
@@ -131,7 +132,10 @@ namespace Serilog.Sinks.Http.Private.Durable
                     }
 
                     if (currentFile == null)
+                    {
+                        isAllLogFilesSent = true;
                         continue;
+                    }
 
                     batch = BufferFileReader.Read(
                         currentFile,
@@ -143,6 +147,7 @@ namespace Serilog.Sinks.Http.Private.Durable
 
                     if (batch.LogEvents.Count > 0)
                     {
+                        isAllLogFilesSent = false;
                         HttpResponseMessage response;
 
                         using (var contentStream = new MemoryStream())
@@ -192,6 +197,10 @@ namespace Serilog.Sinks.Http.Private.Durable
                             && IsUnlockedAtLength(currentFile, nextLineBeginsAtOffset))
                         {
                             bookmark.WriteBookmark(0, fileSet[1]);
+                        }
+                        else
+                        {
+                            isAllLogFilesSent = true;
                         }
 
                         if (fileSet.Length > 2)
